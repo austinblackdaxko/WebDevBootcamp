@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    text-decoration: #f78120 overline wavy;
+    letter-spacing: 15px;
+    font-size: 80px;
+    font-family: Segoe UI, Futura;
+}
+
+p {
+    font-weight: normal;
+    line-height: 1.5;
+ 
+}
+
+a   {
+    text-decoration: none;
+}
