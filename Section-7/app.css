@@ -1,4 +1,4 @@
-/* * {
+ /* * {
     
     background-color: cyan;
 } */
@@ -21,6 +21,8 @@ button {
 h1, h2 {
     color: #81968F;
 }
+
+
 
 span {
     color: #fcba04 ;
@@ -83,8 +85,21 @@ a[href*="google"] {
 
 h2::first-letter {
     font-size: 50px;
+    color: rebeccapurple
 }
 
 p::first-line {
     color: purple;
+}
+
+p::selection {
+    background-color: black;
+}
+
+button:hover {
+    background-color: olive;
+}
+
+button {
+    background-color: magenta ;
 }
