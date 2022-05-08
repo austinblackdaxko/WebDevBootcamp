@@ -1,7 +1,7 @@
 section {
     width: 80%;
     height: 800px;
-    background-image: no-repeat center/20% url("https://images.unsplash.com/photo-1592043522843-e277c0e74af0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80");
+    background: center/50% no-repeat url("https://images.unsplash.com/photo-1592043522843-e277c0e74af0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"), blueviolet;
     /* background-size: cover;
     background-repeat: no-repeat; */
     /* background-position: bottom; */
