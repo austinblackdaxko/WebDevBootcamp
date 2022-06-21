@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 class="display-2">Forms</h1>
+    <form action="#nowhere">
+      <div class="row g-3">
+        <div class="form-group col-md-6">
+          <label for="email">Email</label>
+          <input type="email" , class="form-control" , id="email" placeholder="Email">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="password">Password</label>
+          <input type="password" , class="form-control" , id="password" placeholder="password">
+        </div>
+        <div class="form-group">
+          <label for="address">street address</label>
+          <input type="text" , class="form-control" , id="address" placeholder="308 Negra Arroyo Lane">
+        </div>
+        <div class="row g-3">
+          <div class="form-group col-md-6">
+            <label for="city">City</label>
+            <input type="text" , class="form-control" , id="city" placeholder="Albequerque">
+          </div>
+          <div class="form-group col-md-3 col-6">
+            <label for="state">State</label>
+            <select class="form-control" name="state" id="state">
+              <option value="AL">Alabama</option>
+              <option value="AK">Arizona</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3 col-6">
+            <label for="zip">Zip</label>
+            <input type="text" , class="form-control" , id="zip" placeholder="87111">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Sign me up!</label>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-success">Register</button>
+
+
+    </form>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
