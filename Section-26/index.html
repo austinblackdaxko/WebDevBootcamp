@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <title>Ping Pong Scorekeeper</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="columns">
+      <div class="column is-half is-offset-one-quarter">
+        <div class="card">
+          <div class="card-image">
+            <figure class="image is-2by1">
+              <img src="http://4.bp.blogspot.com/-schAhg6joOk/U27Kdt1MfAI/AAAAAAAAVq8/_T1oXM6hPFw/s1600/ping3.png" alt="pingpongman">
+            </figure>
+          </div>
+          <header class="card-header">
+            <p class="card-header-title">
+              Ping Pong Scoreboard
+            </p>
+            <button class="card-header-icon" aria-label="more options">
+              <span class="icon">
+                <i class="fas fa-angle-down" aria-hidden="true"></i>
+              </span>
+            </button>
+          </header>
+          <div class="card">
+            <div class="card-content">
+              <div class="content">
+                <p class="title is-1"><span id="p1">0</span> to <span id="p2">0</span></p>
+
+                <label for="winScore" class = "label is-large is-inline">Playing To:</label>
+                <div class="select is-rounded">
+                  <select name="winScore" id="winScore">
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="13">13</option>
+                    <option value="21">21</option>
+                  </select>
+                </div>
+                <p class="subtitle">Use the buttons below to keep score. Must win by at least two</p>
+                <h3>Number of wins:</h3>
+                <p class="winCounter">Player 1: <span id="player1Wins">0</span></p>
+                <p class="winCounter">Player 2: <span id="player2Wins">0</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <footer class="card-footer">
+            <button id="addP1" class="is-primary button card-footer-item is-large">+1 Player One</button>
+            <button id="addP2" class="is-info button card-footer-item is-large">+1 Player Two</button>
+            <button id="reset" class="is-danger button card-footer-item   is-large">Reset</button>
+          </footer>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="app.js"></script>
+
+
+</body>
+
+</html>
