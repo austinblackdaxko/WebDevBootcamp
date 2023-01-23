@@ -114,12 +114,36 @@ app.get("/workouts/:category/add", (req, res) => {
   res.render('add_workout', { workoutCategory })
 })
 
+app.get("/workouts/:category/:id/edit", (req, res) => {
+  const { category, id } = req.params;
+  const workoutCategory = findWorkoutCategory(category);
+  const workout = findWorkoutID(workoutCategory, id);
+  res.render("edit_workout", {workoutCategory, workout})
+})
+
 app.get("/workouts/:category/:id", (req, res) => {
   const { id, category } = req.params;
   const workoutCategory = findWorkoutCategory(category);
   const workout = findWorkoutID(workoutCategory, id);
   res.render("workout", { workoutCategory, workout });
 });
+
+app.patch('/workouts/:category/:id', (req, res) => {
+  const { id, category } = req.params;
+  const workoutCategory = findWorkoutCategory(category);
+  const workout = findWorkoutID(workoutCategory, id);
+  const newWorkoutName = req.body.workoutName;
+  const newDescription = req.body.description;
+  for(let i = 0; i < workoutCategories.length; i++) {
+    for(let j = 0; j < workoutCategories[i].workouts.length; j++) {
+      if(workoutCategories[i].workouts[j].workoutID == id) {
+        workoutCategories[i].workouts[j].description = newDescription;
+        workoutCategories[i].workouts[j].workoutName = newWorkoutName;
+      }
+    }
+  }
+  res.redirect(`/workouts/${category}/${id}`);
+})
 
 app.delete('/workouts/:category/:id', (req, res) => {
   const { id, category } = req.params;
