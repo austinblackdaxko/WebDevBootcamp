@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= workout.workoutName %> </title>
+</head>
+<body>
+  <h1><%= workout.workoutName %></h1>
+
+  <h2>Workout Group: <%= workoutCategory.categoryName %> </h2>
+
+  <p>Description: <%= workout.description %> </p>
+
+  <form method="POST" action="/workouts/<%= workoutCategory.categoryName.toLowerCase()%>/<%= workout.workoutID %>?_method=DELETE">
+    <button>DELETE</button>
+  </form>
+
+  
+</body>
+</html>

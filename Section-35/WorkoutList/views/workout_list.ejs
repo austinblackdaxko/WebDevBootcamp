@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= workoutCategory.categoryName %> Workouts</title>
+</head>
+<body>
+  <h1><%= workoutCategory.categoryName %> Workouts </h1>
+  <ul>
+    <% for(let i = 0; i < workoutCategory.workouts.length; i++) { %> 
+    <li>
+      <a href="/workouts/<%= workoutCategory.categoryName.toLowerCase() %>/<%= workoutCategory.workouts[i].workoutID %>"><%= workoutCategory.workouts[i].workoutName %></a>
+      <% } %> 
+    </li>
+  </ul>
+
+  <a href="/">Home</a>
+
+  <a href="/workouts/<%= workoutCategory.categoryName.toLowerCase() %>/add">Add New Workout</a>
+  
+</body>
+</html>
