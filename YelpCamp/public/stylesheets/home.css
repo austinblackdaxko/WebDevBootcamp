@@ -1,7 +1,7 @@
 body {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  url("https://i.kinja-img.com/gawker-media/image/upload/c_fit,f_auto,g_center,q_60,w_645/e05ef7a95bd52a5913fbde6d056337ab.jpg");
+  url("https://res.cloudinary.com/dfypl6bh3/image/upload/v1679540605/YelpCamp/mmrsr1wbp4qf5kttbydj.jpg");
   background-size: cover;
   background-position: center;
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
